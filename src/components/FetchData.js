@@ -1,9 +1,9 @@
 import axios from "axios"
 
-async function fetchData ( url, setNews ) {
+async function fetchData ( url, setAllNews ) {
     const resp = await axios.get( url )
     const results = resp.data
-    setNews( results.articles )
+    setAllNews( results.articles )
 }
 
 

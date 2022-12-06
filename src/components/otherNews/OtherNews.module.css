@@ -1,0 +1,28 @@
+.wraper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	justify-content: center;
+}
+
+.card {
+	width: 390px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 350px;
+}
+
+.card img {
+	border-radius: 4px !important;
+	object-fit: cover;
+	object-position: center;
+	width: 350px;
+	height: 200px;
+}
+
+.card h4 {
+	width: 90%;
+}
