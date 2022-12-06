@@ -15,15 +15,17 @@ const NewsList = ( { news } ) => {
                         <div
                             key={ geraId() }
                             className="card big">
+
+                            <img
+                                src={ news[ 0 ].urlToImage }
+                                alt=""
+                            />
+                            <h4> { news[ 0 ].title }</h4>
                             <a
                                 target={ "_blank" }
                                 href={ news[ 0 ].url }>
-                                <img
-                                    src={ news[ 0 ].urlToImage }
-                                    alt=""
-                                />
+                                Clique aqui para ler a materia no site
                             </a>
-                            <h4> { news[ 0 ].title }</h4>
                         </div>
                         <div
                             key={ geraId() }
